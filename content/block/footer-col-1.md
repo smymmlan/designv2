@@ -1,3 +1,6 @@
-#### Footer col 1
+#### Bra saker:
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+* Snö
+* Choklad
+* Skräckfilm
+* Kaffe

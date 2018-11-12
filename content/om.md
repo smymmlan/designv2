@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-kursrepo
 
@@ -12,17 +12,26 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-redovisa
+
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
 ---
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Detta tror jag kommer att vara en riktigt lärorik och intressant kurs som kommer ge oss elever många
+nya insikter och kunskaper i ämnet design. Design är inte bara "något som är snyggt", det är också användarvänlighet, funktion och ger oss därför en annan ingång till att bedömma vad som är god design.
 
-Skriv några kloka ord om kursen?
+Design är mycket mer än "what meets the eye".
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=img/bridge.jpg alt="bridge" caption="Te Rewa Rewa Bridge"]
