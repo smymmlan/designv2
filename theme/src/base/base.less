@@ -1,0 +1,64 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: snow;
+@bgColorBody: snow;
+@colorBody: #274068;
+@fontFamilyBody: "Muli", sans-serif;
+@thinBorderGrey: 0.1px solid #eeecec;
+@footerColor: #334665;
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    font-size: 100%;
+    font-family: @fontFamilyBody;
+    font-weight: lighter;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    max-width: 100%;
+    //font: 100.01%/1 @fontFamilyBody;
+}
+
+.wrap-all {
+    background-color: @bgColorBody;
+}
+
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: @colorBody;
+}
+
+p,
+li {
+    font-size: 1.2em;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 1px;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+img{
+    max-width: 100%;
+}
