@@ -24,6 +24,14 @@ views:
             meta:
                 type: single
                 route: block/byline
+
+    info:
+        region: sidebar-left
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                route: block/info          
 ---
 Om
 =========================
