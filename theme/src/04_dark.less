@@ -1,0 +1,57 @@
+/*!
+ * Stylesheet for design kmom04 dark.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Nova+Slim|Poppins');
+
+@import "kmom04.less";
+@import "module/header-dark.less";
+@import "module/flash-vgrid.less";
+@import "module/byline-dark.less";
+@import "module/footer-dark.less";
+@import "responsive/responsive-kmom04.less";
+
+
+@fontFamilyBody: 'Poppins', sans-serif;
+@fontFamilyHeadings: 'Open Sans', sans-serif;
+@fontNavbar: 'Open Sans', sans-serif;
+// @fontFamilyLogo: 'Original Surfer', cursive;
+@fontFamilyLogo: 'Raleway'; //'Nova Slim', cursive;
+
+@bgColor: #334665;
+@textColor: @navbarTextColor; // #c9cdd2;
+@bgExtraDark: #16263F; //#1f2c41;
+@thinBorderGrey: 0.1px solid @bgColor;
+@siteLogoTextColor: #a7bcdd;
+@navbarTextColor: #a7bcdd;
+@footerTextColor: @navbarTextColor; // #c9cdd2;
+@mainBgColor: @bgExtraDark;
+@footerBgColor: #0e1c32;
+@complementaryColor: #996e17;
+
+
+.wrap-all {
+    //background-color: @bgBodyColor;
+    background-image: linear-gradient(@bgColor, @bgExtraDark 60%);
+    letter-spacing: .5px;
+}
+
+.rm-small-wrapper {
+    color: @navbarTextColor;
+}
+
+.outer-wrap-main {
+    background-color: @mainBgColor;
+    box-sizing: border-box;
+    box-shadow: 1px 10px 5px 5px rgba(0,0,0,.2);
+    border: .1px solid @mainBgColor;
+    border-top: .1px solid #2b3b55;
+    color: @textColor;
+}
+
+code {
+    color: @mainBgColor;
+}

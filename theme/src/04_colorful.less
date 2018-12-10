@@ -1,0 +1,76 @@
+/*!
+ * Stylesheet for design kmom04 colorful.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+@import "kmom04.less";
+@import "module/header-colorful.less";
+@import "module/flash-colorful.less";
+@import "module/breadcrumb-colorful.less";
+@import "module/byline-colorful.less";
+@import "module/footer-colorful.less";
+@import "responsive/responsive-kmom04-colorful.less";
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+@fontFamilyBody: 'Quicksand', sans-serif;
+@fontFamilyHeadings: 'Quicksand', sans-serif;
+@fontNavbar: 'Advent Pro', sans-serif;
+// @fontFamilyLogo: 'Original Surfer', cursive;
+@fontFamilyLogo: 'Playfair Display', serif;
+
+@bgColor: snow;
+@textColor: #326388;
+@bgExtraDark: #333;
+@headerBgColor: #ecd2cb;
+@headerGradient: #326388; // #64737f;
+@thinBorderGrey: 0.1px solid @bgColor;
+@siteLogoTextColor: #77a0c0; // #2e5370; #5086af;
+@navbarTextColor: #77a0c0; // #2e5370;
+@footerTextColor: #fff2bc;
+@mainBgColor: snow;
+@footerBgColor: #d35245;
+@innerFooterBgColor: #d35245;
+//#a03b53;
+@complementaryColor: #996e17;
+
+
+.wrap-all {
+    background-color: snow; //#fbeaee;
+    //background-image: linear-gradient(@bgColor, @footerBgColor 60%);
+    background-image: linear-gradient(@bgColor, #ffc2bc 60%);
+}
+
+.region-sidebar-left {
+    #desinax-vgrid.column(5);
+    #desinax-vgrid.push(1);
+    a {
+       letter-spacing: inherit;
+       transition: none;
+   }
+    a:hover {
+        letter-spacing: inherit;
+   }
+}
+
+.rm-small-wrapper {
+    color: @navbarTextColor;
+}
+
+.outer-wrap-main {
+    background-color: @mainBgColor;
+    box-sizing: border-box;
+    box-shadow: 1px 10px 5px 5px rgba(0,0,0,.2);
+    border: .1px solid @mainBgColor;
+    border-top: .1px solid #eeecec;
+    color: @textColor;
+}
+
+code {
+    color: @footerBgColor;
+}

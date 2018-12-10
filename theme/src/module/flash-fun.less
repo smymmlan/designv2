@@ -1,0 +1,23 @@
+
+.outer-wrap-flash {
+    margin-bottom: @magicNumber * 2;
+}
+
+.inner-wrap-flash {
+    #desinax-vgrid.grid(100%);
+    box-shadow: none; //1px 10px 5px 1px rgba(0,0,0,.2);
+    margin-bottom: @magicNumber;
+}
+
+.inner-wrap-flash.row {
+    width: 100%;
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+    width: 100%;
+    margin: 0;
+    img {
+        display: none;
+    }
+}

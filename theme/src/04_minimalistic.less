@@ -1,0 +1,177 @@
+/*!
+ * Stylesheet for design kmom04 minimalistic.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+@import "kmom04.less";
+
+@import "module/header-minimalistic.less";
+@import "module/flash-minimalistic.less";
+@import "module/breadcrumb-minimalistic.less";
+@import "module/byline-minimalistic.less";
+@import "module/footer-minimalistic.less";
+@import "responsive/responsive-kmom04-minimalistic.less";
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lovers+Quarrel|Miss+Fajardose|Monsieur+La+Doulaise|Rouge+Script|Tangerine:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Yanone+Kaffeesatz:300');
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+
+@fontFamilyBody: 'Yanone Kaffeesatz', sans-serif;
+@fontFamilyHeadings: 'Tangerine', sans-serif;
+@fontNavbar: 'Tangerine', sans-serif;
+@fontFamilyLogo: 'Tangerine';
+
+@bgColor: white;
+@textColor: #4d4d4d; // #c9cdd2;
+@bgExtraDark: #16263F; //#1f2c41;
+@thinBorderGrey: 0.1px solid @bgColor;
+@siteLogoTextColor: #4d4d4d;
+@navbarTextColor: #404040;
+@footerTextColor: #4d4d4d;
+@headerBgColor: #a6a6a6;
+@mainBgColor: @bgColor;
+@footerBgColor: @bgColor;
+@complementaryColor: #996e17;
+@hoverTextColor: #c63952;
+
+
+.wrap-all {
+    //background-color: @bgBodyColor;
+    background-color: #f5f5f5;
+    //background-image: url("../img/grey.png"); // y
+    background-repeat: repeat-y;
+    background-position: top;
+    @media screen and (max-width: 2500px) {
+             background-image: url("../img/flowerz.png");
+         }
+    @media screen and (max-width: 1500px) {
+             background-image: url("../img/lgs.png");
+         }
+     @media screen and (max-width: 1200px) {
+              background-image: url("../img/lgs.png"); //grey
+          }
+      @media screen and (max-width: 950px) {
+               background-image: none;
+           }
+
+}
+
+.rm-desktop li a:hover {
+    color: @hoverTextColor;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+body {
+    //background: rgba(255, 255, 255, 3);
+    background-color: #f5f5f5;
+}
+
+.rm-small-wrapper {
+    color: @navbarTextColor;
+}
+
+.outer-wrap-main {
+    background: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    color: @textColor;
+    box-shadow: none;
+    border: none;
+}
+
+.region-main {
+    #desinax-vgrid.column(@columns - 14);
+    #desinax-vgrid.push(1);
+    min-height: 600px;
+    margin-top: @magicNumber * 3;
+    @media screen and (max-width: 950px) {
+        #desinax-vgrid.column(@columns - 6);
+        #desinax-vgrid.push(1);
+        min-height: 400px;
+    }
+    @media screen and (max-width: 800px) {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+        min-height: 300px;
+    }
+    @media screen and (max-width: 550px) {
+        margin-top: 24px;
+    }
+    article p {
+        //display: none;
+    }
+    .figure.right {
+        display: none;
+    }
+
+    .author.byline {
+        display: none;
+    }
+    &.has-sidebar {
+        #desinax-vgrid.column(@columns - 12);
+        #desinax-vgrid.push(1);
+        background: rgba(243, 243, 243, 0);
+        margin-top: 0;
+        article p {
+            display: block;
+            color: @navbarTextColor;
+        }
+    }
+}
+
+.region-main.has-sidebar-right {
+    margin-bottom: 60px;
+    @media screen and (max-width: 950px) {
+        #desinax-vgrid.column(@columns - 6);
+        #desinax-vgrid.push(1);
+    }
+}
+
+.region-main.has-sidebar-left {
+    @media screen and (max-width: 950px) {
+        #desinax-vgrid.column(@columns - 4);
+        #desinax-vgrid.push(1);
+    }
+}
+
+.region-sidebar-left {
+    display: none;
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.push(1);
+    color: @textColor;
+    a {
+        color: @textColor;
+    }
+    a:hover{
+        color: @hoverTextColor;
+    }
+}
+
+.region-sidebar-left.has-sidebar-right {
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.push(1);
+}
+
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.push(1);
+    color: @textColor;
+    a {
+        color: @textColor;
+    }
+    a:hover{
+        color: @hoverTextColor;
+    }
+}
+
+code {
+    color: @textColor;
+}
+
+.next-previous {
+    opacity: .9;
+}

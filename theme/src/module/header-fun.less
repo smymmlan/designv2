@@ -1,0 +1,92 @@
+
+.inner-wrap-header {
+    //background-color: @headerBgColor;
+    //background-image: linear-gradient(@headerGradient, @bgColor 60%);
+    background: rgba(255, 255, 255, 0);
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+}
+
+.region-header-col-1 {
+    #desinax-vgrid.column(8);
+    #desinax-vgrid.push(1);
+    text-align: center;
+    //height: 80px;
+    background: rgba(211, 15, 225, .7);
+    border-radius: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(@columns); //18
+    margin-bottom: 48px;
+    .my-navbar {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 3%;
+        padding-right: 5%;
+        box-sizing: none;
+        color: @navbarTextColor;
+        background: rgba(225,2,122,.4);
+        border-radius: 100%;
+        padding: 15%;
+        width: 70%;
+        li {
+            padding-left: 0;
+            font-family: @fontNavbar;
+        }
+        a:hover {
+            color: #f8de71; // #ffdc62; #ffe100;
+            text-decoration: none;
+        }
+    }
+}
+
+.region-header-col-3 {
+    #desinax-vgrid.column(2);
+    height: 80px;
+}
+
+.site-logo {
+    display: none;
+    &-text {
+        font-family: @fontFamilyLogo;
+        font-size: 4em;
+        a {
+            color: @siteLogoTextColor;
+            letter-spacing: 10px;
+            transition: all .1s ease-in;
+            background: -webkit-linear-gradient(@siteLogoTextColor, yellow, @siteLogoTextColor);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+        a:hover {
+            letter-spacing: 0.5em;
+            }
+        }
+
+    &-text-icon {
+        display: none;
+    }
+}
+
+.fa-bars::before {
+    color: #f8de71; //  #5c5904;
+}
+
+/* ----------------------------------------------------------------------------- NAVBAR --------------- */
+
+.rm-navbar ul {
+    margin: 0;
+}
+
+.rm-desktop li a {
+    text-align: left;
+}
+
+.rm-default a {
+    padding: 0;
+}

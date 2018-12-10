@@ -1,0 +1,98 @@
+/*!
+ * Stylesheet for design kmom04 fun.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+@import "kmom04.less";
+@import "module/header-fun.less";
+@import "module/flash-fun.less";
+@import "module/breadcrumb-fun.less";
+@import "module/byline-fun.less";
+@import "module/footer-fun.less";
+@import "responsive/responsive-kmom04-fun.less";
+
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
+@import url('https://fonts.googleapis.com/css?family=Monofett');
+@import url('https://fonts.googleapis.com/css?family=Modak|Spicy+Rice');
+
+@fontFamilyBody: 'Quicksand', sans-serif;
+@fontFamilyHeadings: 'Monofett', sans-serif;
+@fontNavbar: 'Monofett', sans-serif;
+// @fontFamilyLogo: 'Original Surfer', cursive;
+@fontFamilyLogo: 'Modak'; //'Playfair Display', serif;
+
+@bgColor: snow;
+@textColor: #fedca4;
+@bgExtraDark: grey;
+@headerBgColor: snow;
+@headerGradient: black;
+@thinBorderGrey: 0.1px solid @bgColor;
+@siteLogoTextColor: red;
+@navbarTextColor: orange;
+@footerTextColor: #fedca4;
+@mainBgColor: orange;
+@footerBgColor: snow;
+@innerFooterBgColor: snow;
+
+@complementaryColor: red;
+
+
+.wrap-all {
+    background-color: snow; //#fbeaee;
+    //background-image: linear-gradient(@bgColor, @footerBgColor 60%);
+    background-image: url("../img/party.png");
+}
+
+.region-sidebar-left {
+    #desinax-vgrid.column(5);
+    #desinax-vgrid.push(1);
+    a {
+       letter-spacing: inherit;
+       transition: none;
+   }
+    a:hover {
+        letter-spacing: inherit;
+   }
+}
+
+.rm-small-wrapper {
+    color: @navbarTextColor;
+}
+
+.outer-wrap-main {
+    //background-color: @mainBgColor;
+    background: rgba(255, 175, 2, .2);
+    box-sizing: border-box;
+    box-shadow: none; //1px 10px 5px 5px rgba(0,0,0,.2);
+    border-left: none; //.1px solid @mainBgColor;
+    border-right: none; //.1px solid @mainBgColor;
+    border-bottom: none;
+    border-top: none; //.1px solid @mainBgColor;
+    color: @textColor;
+    border-radius: 100%;
+    padding: 8%;
+    margin-bottom: @magicNumber * 3;
+}
+
+.region-main.has-sidebar-right img {
+    opacity: .8;
+}
+
+.region-main.has-sidebar-left.has-sidebar-right img {
+    opacity: .8;
+}
+
+
+.figure.right {
+    display: none;
+}
+
+code {
+    color: #C70039;
+}
+
+h1,
+h4 {
+    color: orange;
+}

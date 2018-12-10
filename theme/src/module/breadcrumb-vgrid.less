@@ -1,0 +1,30 @@
+
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+    margin-bottom: @magicNumber;
+}
+
+.breadcrumb-list {
+    box-shadow: 1px 10px 5px 1px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    box-sizing: border-box;
+    //background-color: @bgColorBody;
+    border: @thinBorderGrey;
+    ul {
+
+    }
+    li {
+        display: none;
+    }
+    li:first-of-type {
+        text-align: left;
+        font-family: @fontNavbar;
+        font-size: 1.5em;
+        #desinax-vgrid.push(1);
+        display: block;
+        ::after {
+            content: ":";
+        }
+    }
+}
