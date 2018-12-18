@@ -1,0 +1,88 @@
+
+.inner-wrap-header {
+    background-color: @headerBgColor;
+    //background: rgba(225, 225, 225, .2);
+    background: rgba(212,212,212, .7);
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+}
+
+
+.region-header-col-1 {
+    #desinax-vgrid.column(4);
+    text-align: center;
+    height: 80px;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(19);
+    height: 80px;
+    .my-navbar {
+        text-align: right;
+        font-size: 1.5em;
+        margin-top: 1.5%;
+        padding-right: 1%;
+        box-sizing: border-box;
+        color: @navbarTextColor;
+        li {
+            padding-left: 1%;
+            font-family: @fontNavbar;
+        }
+    }
+}
+
+.region-header-col-3 {
+    #desinax-vgrid.column(1);
+    height: 80px;
+}
+
+.site-logo {
+    display: none;
+    &-text {
+        font-family: @fontFamilyLogo;
+        font-size: 3.5em;
+        a {
+            color: @siteLogoTextColor;
+            letter-spacing: 1px;
+            transition: all .1s ease-in;
+            }
+        a:hover {
+            letter-spacing: 0.1em;
+            }
+        }
+
+    &-text-icon {
+        display: none;
+    }
+}
+
+/* ----------------------------------------------------------------------------- NAVBAR --------------- */
+
+.rm-navbar ul {
+    margin: 0;
+}
+
+.rm-desktop li a {
+    text-align: left;
+}
+
+.rm-default ul li {
+    font-weight: bold;
+}
+
+.rm-default a {
+    padding: 0;
+}
+
+
+.rm-desktop li a:hover {
+    color: @hoverTextColor;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.rm-small-wrapper {
+    color: @navbarTextColor;
+}

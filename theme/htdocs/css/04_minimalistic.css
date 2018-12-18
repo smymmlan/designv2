@@ -5711,7 +5711,7 @@ select {
   font-family: 'Lovers Quarrel';
   font-style: normal;
   font-weight: 400;
-  src: local('Lovers Quarrel'), local('LoversQuarrel-Regular'), url(https://fonts.gstatic.com/s/loversquarrel/v5/Yq6N-LSKXTL-5bCy8ksBzpQ_-wArab4.ttf) format('truetype');
+  src: local('Lovers Quarrel'), local('LoversQuarrel-Regular'), url(https://fonts.gstatic.com/s/loversquarrel/v6/Yq6N-LSKXTL-5bCy8ksBzpQ_-wArab4.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Miss Fajardose';
@@ -5723,7 +5723,7 @@ select {
   font-family: 'Monsieur La Doulaise';
   font-style: normal;
   font-weight: 400;
-  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v6/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZm5ZyEU.ttf) format('truetype');
+  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v7/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZm5ZyEU.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Rouge Script';

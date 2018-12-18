@@ -1,5 +1,6 @@
 ---
-
+views:
+    flash: false
 ---
 
 Färgval för tre matjättars webbplatser och vad dessa färgval förmedlar

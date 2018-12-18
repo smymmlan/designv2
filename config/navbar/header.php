@@ -40,6 +40,35 @@ return [
                         "url" => "redovisning/kmom04",
                         "title" => "Redovisning för kmom04.",
                     ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "redovisning/kmom05",
+                        "title" => "Redovisning för kmom05.",
+                    ],
+                ],
+            ],
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg/index",
+            "title" => "Blogg.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "En promenad efter älven",
+                        "url" => "blogg/mitt-forsta-inlagg",
+                        "title" => "En promenad efter älven.",
+                    ],
+                    [
+                        "text" => "En liten kissekotte",
+                        "url" => "blogg/mitt-andra-inlagg",
+                        "title" => "En liten kissekotte.",
+                    ],
+                    [
+                        "text" => "En resa till Åre",
+                        "url" => "blogg/mitt-tredje-inlagg",
+                        "title" => "En resa till Åre.",
+                    ],
                 ],
             ],
         ],
@@ -74,8 +103,14 @@ return [
                         "url" => "rapport/fargschema",
                         "title" => "Färgschema.",
                     ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "rapport/laddningstid",
+                        "title" => "Laddningstid.",
+                    ],
                 ],
             ],
         ],
+
     ],
 ];

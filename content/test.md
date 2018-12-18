@@ -1,5 +1,6 @@
 ---
 views:
+    flash: 
     kursrepo:
         region: sidebar-right
         template: anax/v2/block/default

@@ -5727,19 +5727,19 @@ select {
   font-family: 'Zilla Slab Highlight';
   font-style: normal;
   font-weight: 400;
-  src: local('Zilla Slab Highlight'), local('ZillaSlabHighlight-Regular'), url(https://fonts.gstatic.com/s/zillaslabhighlight/v5/gNMbW2BrTpK8-inLtBJgMMfbm6uNVDvRxitPaWQ.ttf) format('truetype');
+  src: local('Zilla Slab Highlight'), local('ZillaSlabHighlight-Regular'), url(https://fonts.gstatic.com/s/zillaslabhighlight/v6/gNMbW2BrTpK8-inLtBJgMMfbm6uNVDvRxitPaWQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Monofett';
   font-style: normal;
   font-weight: 400;
-  src: local('Monofett'), url(https://fonts.gstatic.com/s/monofett/v7/mFTyWbofw6zc9NtnW73Vsxg.ttf) format('truetype');
+  src: local('Monofett'), url(https://fonts.gstatic.com/s/monofett/v8/mFTyWbofw6zc9NtnW73Vsxg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Modak';
   font-style: normal;
   font-weight: 400;
-  src: local('Modak'), url(https://fonts.gstatic.com/s/modak/v3/EJRYQgs1XtIEskMA-hE.ttf) format('truetype');
+  src: local('Modak'), url(https://fonts.gstatic.com/s/modak/v4/EJRYQgs1XtIEskMA-hE.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Spicy Rice';

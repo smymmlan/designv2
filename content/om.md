@@ -1,5 +1,8 @@
 ---
 views:
+
+    flash: false
+
     kursrepo:
         region: sidebar-right
         template: anax/v2/block/default
@@ -24,7 +27,7 @@ views:
             meta:
                 type: single
                 route: block/byline
-     
+
 ---
 Om
 =========================

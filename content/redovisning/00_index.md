@@ -1,5 +1,6 @@
 ---
-
+views:
+    flash: false
 ---
 Redovisningstexter
 =========================
