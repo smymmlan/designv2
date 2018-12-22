@@ -76,14 +76,19 @@ return [
             "submenu" => [
                 "items" => [
                     [
-                        "text" => "Kmom04",
+                        "text" => "Färgschema",
                         "url" => "rapport/fargschema",
                         "title" => "Färgschema.",
                     ],
                     [
-                        "text" => "Kmom05",
+                        "text" => "Laddningstid",
                         "url" => "rapport/laddningstid",
                         "title" => "Laddningstid.",
+                    ],
+                    [
+                        "text" => "Designelement",
+                        "url" => "rapport/designelement",
+                        "title" => "Designelement.",
                     ],
                 ],
             ],

@@ -4760,6 +4760,9 @@ img {
   max-width: 55%;
   margin: 0;
 }
+.figure.kmom06 {
+  display: none;
+}
 .region-main.has-sidebar-left.has-sidebar-right article {
   margin: 1%;
 }
@@ -5583,6 +5586,9 @@ figcaption p {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
+}
+.figure.kmom06 {
+  display: none;
 }
 /**
  * My own settings, not currently in their own module.

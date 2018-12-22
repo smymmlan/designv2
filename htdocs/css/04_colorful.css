@@ -5067,6 +5067,9 @@ img {
 .region-main img {
   height: 14.7em;
 }
+.region-main .figure.kmom06 {
+  display: none;
+}
 .region-main.has-sidebar-right {
   display: inline;
   float: left;
@@ -5114,6 +5117,12 @@ img {
 }
 .figure {
   margin-bottom: 24px;
+}
+.figure.kmom06 {
+  display: none;
+}
+.kmom06 {
+  display: none;
 }
 /* ----------------------------------------------------------------------------- SIDEBAR ----------------------- */
 .region-sidebar-left,
@@ -5232,6 +5241,12 @@ select {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
+}
+.figure.kmom06 {
+  display: none;
+}
+.kmom06 {
+  display: none;
 }
 /**
  * My own settings, not currently in their own module.
@@ -5482,6 +5497,9 @@ select {
     margin-left: 4.6875%;
     margin-bottom: 24px;
   }
+  .region-main .figure.kmom06 {
+    display: none;
+  }
   .region-main img {
     height: 12em;
   }
@@ -5561,6 +5579,9 @@ select {
   .region-main img {
     height: 9.4em;
   }
+  .region-main .figure.kmom06 {
+    display: none;
+  }
   .region-main.has-sidebar-left {
     display: inline;
     float: left;
@@ -5623,6 +5644,9 @@ select {
   .region-main img {
     height: 6.7em;
   }
+  .region-main .figure.kmom06 {
+    display: none;
+  }
   .region-main.has-sidebar-right {
     display: inline;
     float: left;
@@ -5679,6 +5703,9 @@ select {
     margin-left: 4.6875%;
   }
   .region-main .figure.right {
+    display: none;
+  }
+  .region-main .figure.kmom06 {
     display: none;
   }
   .region-main.has-sidebar-left.has-sidebar-right {

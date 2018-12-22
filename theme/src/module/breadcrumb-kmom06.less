@@ -1,0 +1,44 @@
+
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns - 1);
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #151414;
+    margin-bottom: @magicNumber;
+    margin-top: 20vh;
+    &:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.outer-wrap-breadcrumb {
+
+}
+
+.breadcrumb-list {
+
+}
+
+
+.breadcrumb-list {
+    text-align: left;
+    box-sizing: border-box;
+    //background-color: @bgColorBody;
+    ul {
+
+    }
+    li {
+        display: none;
+    }
+    li:first-of-type {
+        text-align: left;
+        font-family: @fontNavbar;
+        font-size: 2em;
+        #desinax-vgrid.push(1);
+        display: block;
+        ::after {
+            content: ":";
+        }
+    }
+}

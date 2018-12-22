@@ -5351,6 +5351,9 @@ figure.figure.right {
     margin-top: 24px;
   }
 }
+.region-main .figure.kmom06 {
+  display: none;
+}
 .region-main .author.byline {
   display: none;
 }

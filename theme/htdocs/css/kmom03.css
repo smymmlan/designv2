@@ -5790,6 +5790,9 @@ figure.figure.right {
     width: 200px;
   }
 }
+.figure.kmom06 {
+  display: none;
+}
 /**
  * My own settings, not currently in their own module.
  */

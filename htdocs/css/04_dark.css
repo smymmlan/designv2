@@ -5091,6 +5091,9 @@ img {
 .region-main img {
   height: 14.7em;
 }
+.region-main .figure.kmom06 {
+  display: none;
+}
 .region-main.has-sidebar-right {
   display: inline;
   float: left;
@@ -5138,6 +5141,12 @@ img {
 }
 .figure {
   margin-bottom: 24px;
+}
+.figure.kmom06 {
+  display: none;
+}
+.kmom06 {
+  display: none;
 }
 /* ----------------------------------------------------------------------------- SIDEBAR ----------------------- */
 .region-sidebar-left,
@@ -5256,6 +5265,12 @@ select {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
+}
+.figure.kmom06 {
+  display: none;
+}
+.kmom06 {
+  display: none;
 }
 /**
  * My own settings, not currently in their own module.
@@ -5471,6 +5486,9 @@ select {
     margin-right: 0.52083333%;
     margin-left: 4.6875%;
     margin-bottom: 24px;
+  }
+  .region-main .figure.kmom06 {
+    display: none;
   }
   .region-main img {
     height: 12em;

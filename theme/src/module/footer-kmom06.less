@@ -1,0 +1,99 @@
+
+
+.outer-wrap-footer {
+    #desinax-vgrid.column(@columns);
+    background: rgba(0,0,0, 0.9);
+    color: @footerTextColor;
+    position: fixed;
+    height: 23%;
+    width: 100%;
+    bottom: 0;
+    font-size: .9em;
+    padding-top: 1%;
+    @media screen and (max-width: 1350px) {
+        font-size: .7em;
+        padding-top: 0;
+        height: 10%;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: .7em;
+        padding-top: 0;
+        height: 100%;
+        position: relative;
+    }
+
+    & a {
+        color: @footerTextColor;
+        letter-spacing: 1px;
+        transition: all .1s ease-in;
+    }
+    & a:hover {
+     letter-spacing: 0.2em;
+     color: @hoverTextColor;
+    }
+
+    h4 {
+        font-size: 1.7em;
+        margin: 0;
+        margin-bottom: @magicNumber;
+        @media screen and (max-width: 1350px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.inner-wrap-footer {
+
+}
+
+.inner-wrap-footer .row {
+    margin: 0;
+    width: 100%;
+}
+
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3 );
+    box-sizing: border-box;
+    @media screen and (max-width: 1350px) {
+        display: none;
+    }
+
+    &-wrapper {
+        overflow: auto;
+        width: 100%;
+        //background-color: @footerBgColor;
+        background: rgba(255, 255, 255, 0);
+    }
+
+    &-1 {
+        #desinax-vgrid.push(2.6);
+        color: @footerTextColor;
+    }
+    &-2 {
+        #desinax-vgrid.push(2.9);
+        color: @footerTextColor;
+    }
+    &-3 {
+        #desinax-vgrid.push(3.1);
+        color: @footerTextColor;
+        a {
+            color: @footerTextColor;
+        }
+    }
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    text-align: center;
+    p {
+        margin: 0;
+        font-family: @fontFamilyHeadings;
+        font-size: 1.5em;
+        color: @footerTextColor;
+        @media screen and (max-width: 1350px) {
+            padding-top: 2%;
+            font-size: 2.3em;
+        }
+    }
+}
