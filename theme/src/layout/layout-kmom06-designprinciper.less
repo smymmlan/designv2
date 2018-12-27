@@ -1,0 +1,295 @@
+
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: 12px;
+}
+
+.region-header,
+.region-flash,
+.region-footer,
+.inner-wrap-header .row,
+.inner-wrap-flash .row {
+    margin: 0;
+    width: 100%;
+}
+
+.outer-wrap-main {
+    #desinax-vgrid.grid(1000px);
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1000px);
+}
+
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1000px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+
+/* ----------------------------------------------------------------------------- MAIN ----------------*/
+
+
+html {
+    background-color: #ffcaa2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23fcbf92' fill-opacity='0.93'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrap-all {
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    background-image: url("../img/julen.jpg");
+}
+
+::selection {
+  background: @hoverTextColor; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: @hoverTextColor; /* Gecko Browsers */
+}
+
+.outer-wrap-main {
+    background: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    color: @textColor;
+    box-shadow: none;
+    border: none;
+    padding-bottom: 20%;
+}
+
+.region-main {
+    #desinax-vgrid.column(@columns - 1); //14
+    #desinax-vgrid.push(0);
+    color: brown;
+    margin-top: 45vh;
+    margin-bottom: @magicNumber;
+    @media screen and (max-width: 950px) {
+        #desinax-vgrid.column(@columns - 6);
+        #desinax-vgrid.push(1);
+        min-height: 400px;
+    }
+    @media screen and (max-width: 800px) {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+        min-height: 300px;
+    }
+    @media screen and (max-width: 550px) {
+        margin-top: 20vh;
+    }
+
+    .figure.left {
+        display: none;
+    }
+
+    .kmom06 {
+        display: none;
+    }
+
+    .author.byline {
+        display: none;
+    }
+
+    &.has-sidebar {
+        #desinax-vgrid.column(@columns - 12);
+        #desinax-vgrid.push(1);
+        margin-top: 1vh;
+        article p {
+            display: block;
+            color: @navbarTextColor;
+        }
+        article p {
+            #desinax-vgrid.column(@columns);
+        }
+
+        article h1 {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns - 9);
+        #desinax-vgrid.push(1);
+        margin-bottom: 60px;
+        margin-top: 30vh;
+        img {
+            max-height: 100%;
+        }
+        figure {
+            border-color: #7a7a7a;
+        }
+        @media screen and (max-width: 950px) {
+            #desinax-vgrid.column(@columns - 6);
+            #desinax-vgrid.push(1);
+        }
+    }
+
+    &.has-sidebar-left {
+        #desinax-vgrid.column(15);
+        #desinax-vgrid.push(1);
+        margin-top: 0vh;
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-bottom: @magicNumber;
+        }
+
+        @media screen and (max-width: 950px) {
+            #desinax-vgrid.column(@columns - 4);
+            #desinax-vgrid.push(1);
+        }
+
+        article p {
+            #desinax-vgrid.column(@columns);
+        }
+
+        article h1 {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(13);
+        #desinax-vgrid.push(1);
+        margin-top: 30vh;
+    }
+}
+
+.region-main.has-sidebar-left {
+    @media screen and (max-width: 950px) {
+        #desinax-vgrid.column(@columns - 4);
+        #desinax-vgrid.push(1);
+    }
+}
+
+
+/* ----------------------------------------------------------------------------- SIDEBAR ----------------------- */
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(6);
+    margin-top: 0vh;
+}
+
+.region-sidebar-left.has-sidebar-right {
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.push(1);
+    margin-top: 20vh;
+}
+
+
+.region-sidebar-right {
+    #desinax-vgrid.column(5);
+    #desinax-vgrid.push(1);
+    box-sizing: border-box;
+    margin-top: 20vh;
+    text-align: center;
+    color: @textColor;
+    a {
+        color: @textColor;
+        letter-spacing: .5px;
+        transition: all .1s ease-in;
+    }
+    a:hover{
+        color: @hoverTextColor;
+        letter-spacing: 0.1em;
+    }
+
+    @media screen and (max-width: 950px) {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+        border-style: none;
+    }
+}
+
+.region-sidebar-left {
+    #desinax-vgrid.column(5);
+    #desinax-vgrid.push(0);
+    padding: 2%;
+    min-height: 350px;
+    a {
+       letter-spacing: .5px;
+       transition: all .1s ease-in;
+   }
+    a:hover {
+        letter-spacing: 0.1em;
+        color: @hoverTextColor;
+   }
+}
+
+.region-sidebar-right.has-sidebar-left,
+.region-sidebar-left.has-sidebar-right {
+    #desinax-vgrid.column(4);
+    }
+
+.region-sidebar-left.has-sidebar-right {
+    #desinax-vgrid.column(3);
+    #desinax-vgrid.push(1);
+    }
+
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.push(0);
+    color: @textColor;
+    a {
+        color: @textColor;
+    }
+    a:hover{
+        color: @hoverTextColor;
+    }
+}
+
+
+.selected a {
+    //letter-spacing: 0.1em;
+}
+
+.selected a::before {
+    content: " ➛ ";
+    color: @textColor;
+}
+
+/* ----------------------------------------------------------------------------- NEXT PREV -------------------------- */
+
+.next {
+    display: inline;
+    float: right;
+}
+
+.previous {
+    display: inline;
+}
+
+.next-previous {
+    opacity: .9;
+}
+
+
+.hljs {
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.hljs-comment  {
+    display: block;
+}
+
+select {
+    width: 80%;
+}
+
+code {
+    color: #141414;
+}

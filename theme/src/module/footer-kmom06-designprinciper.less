@@ -1,0 +1,124 @@
+
+
+.outer-wrap-footer {
+    #desinax-vgrid.column(@columns);
+    color: @footerTextColor;
+    width: 100%;
+    margin-left: 0;
+    font-size: 1em;
+    padding-top: 3%;
+    height: 400px;
+    background-image: url("../img/84.jpg");
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 1350px) {
+        font-size: .9em;
+        padding-top: 5%;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: .9em;
+        padding-top: 5%;
+        height: 350px;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: .9em;
+        padding-top: 0;
+        height: 750px;
+    }
+
+    & a {
+        color: @footerTextColor;
+        letter-spacing: 1px;
+        transition: all .1s ease-in;
+    }
+    & a:hover {
+     letter-spacing: 0.2em;
+     color: @hoverTextColor;
+    }
+
+    h4 {
+        font-size: 1.7em;
+        margin: 0;
+        margin-bottom: @magicNumber;
+        @media screen and (max-width: 1350px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.inner-wrap-footer {
+
+}
+
+.inner-wrap-footer .row {
+    margin: 0;
+    width: 100%;
+}
+
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3 );
+    box-sizing: border-box;
+    @media screen and (max-width: 1350px) {
+
+    }
+
+    &-wrapper {
+        overflow: auto;
+        width: 100%;
+        background-image: url(../img/footerlabel.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 650px) {
+            font-size: .9em;
+            padding-top: 3%;
+            background-image: none;
+            ul {
+                padding-bottom: 5%;
+            }
+        }
+    }
+
+    &-x {
+        text-align: center;
+        @media screen and (max-width: 650px) {
+            background-image: url(../img/footerlabel.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 1%;
+        }
+    }
+
+    &-1 {
+        #desinax-vgrid.push(2.6);
+        color: @footerTextColor;
+    }
+    &-2 {
+        #desinax-vgrid.push(2.9);
+        color: @footerTextColor;
+    }
+    &-3 {
+        #desinax-vgrid.push(3.1);
+        color: @footerTextColor;
+        a {
+            color: @footerTextColor;
+        }
+    }
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    text-align: center;
+    p {
+        margin: 0;
+        font-family: @fontFamilyHeadings;
+        font-size: 1.5em;
+        color: @footerTextColor;
+        @media screen and (max-width: 1350px) {
+            padding-top: 2%;
+            font-size: 2.3em;
+        }
+    }
+}
